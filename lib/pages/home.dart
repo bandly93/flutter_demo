@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget{
           mainAxisAlignment : MainAxisAlignment.spaceAround,
           children: <Widget>[
             Text(
-              'Squish',
+              'FitnessApp',
               style : TextStyle(
                 color : Colors.white,
                 fontSize : 60,
@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget{
               ),
             ),
             Text(
-              'Your Mobile Abstract Diary',
+              'Get ready to lose weight',
               textAlign: TextAlign.center,
               style : TextStyle (
                 color : Colors.white,
