@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/common/button.dart';
 import '../styles/buttonStyles.dart';
+import 'package:flutter_app/common/buttonPress.dart';
+import 'package:flutter_app/pages/login.dart';
 
 class HomePage extends StatelessWidget{
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -42,9 +45,9 @@ class HomePage extends StatelessWidget{
               ),
             Column(
               children: <Widget>[
-                Button(text : "SIGN UP FREE",textStyle: signUpBtn,),
+                Button(text : "SIGN UP FREE",textStyle: signUpBtn, ),
                 Button(text : "CONTINUE WITH FACEBOOK", textStyle : fbBtn),
-                Button(text : "LOG IN", textStyle: logInBtn,),
+                Button(text : "LOG IN", textStyle: logInBtn, route : LoginPage),
               ],
             ),
           ],
