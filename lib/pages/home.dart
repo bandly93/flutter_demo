@@ -1,27 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/common/button.dart';
 import '../styles/buttonStyles.dart';
-import 'package:flutter_app/common/buttonPress.dart';
+import 'package:flutter_app/common/gradientContainer.dart';
 import 'package:flutter_app/pages/login.dart';
 
 class HomePage extends StatelessWidget{
+
+  final colors = [Colors.pink[300],Colors.cyan[300],Colors.cyanAccent];
 
   @override
   Widget build(BuildContext context){
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            stops: [0.1,0.7,1],
-            colors: [
-              Colors.pink[300],
-              Colors.cyan[300],
-              Colors.cyanAccent,
-            ],
-          ),
-        ),
+        decoration: gradient(colors,Alignment.topLeft,Alignment.bottomRight),
         padding: new EdgeInsets.fromLTRB(70, 0, 70, 0),
         child : Column(
           mainAxisAlignment : MainAxisAlignment.spaceAround,
@@ -35,7 +26,7 @@ class HomePage extends StatelessWidget{
               ),
             ),
             Text(
-              'Get ready to lose weight',
+              'Want to demo the app?',
               textAlign: TextAlign.center,
               style : TextStyle (
                 color : Colors.white,
