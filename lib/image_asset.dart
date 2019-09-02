@@ -1,0 +1,1 @@
+const String profile = "assets/profile/bandProfile.jpeg";
