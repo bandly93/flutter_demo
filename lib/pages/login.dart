@@ -3,7 +3,7 @@ import 'package:flutter_app/common/navBar.dart';
 
 LoginPage(){
   return Scaffold(
-    body : Row(
+    body : Column(
       children : <Widget>[
         NavBar(),
       ]

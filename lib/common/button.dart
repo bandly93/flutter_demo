@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import '../styles/buttonStyles.dart';
-import '../pages/login.dart';
 
 /*
   How to use Button Widget
@@ -9,9 +7,6 @@ import '../pages/login.dart';
   #2 call widget using : Button(@required text, onPressed, textStyle);
 
 */
-
-
-
 
 class Button extends StatelessWidget{
   final String text;
