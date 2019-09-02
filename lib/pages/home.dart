@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/common/button.dart';
+import '../styles/buttonStyles.dart';
 
 class HomePage extends StatelessWidget{
   @override
@@ -23,7 +24,7 @@ class HomePage extends StatelessWidget{
           mainAxisAlignment : MainAxisAlignment.spaceAround,
           children: <Widget>[
             Text(
-              'FitnessApp',
+              'Bubble',
               style : TextStyle(
                 color : Colors.white,
                 fontSize : 60,
@@ -41,9 +42,9 @@ class HomePage extends StatelessWidget{
               ),
             Column(
               children: <Widget>[
-                Button(text : "SIGN UP FREE"),
-                Button(text : "CONTINUE WITH FACEBOOK"),
-                Button(text : "LOG IN"),
+                Button(text : "SIGN UP FREE",textStyle: signUpBtn,),
+                Button(text : "CONTINUE WITH FACEBOOK", textStyle : fbBtn),
+                Button(text : "LOG IN", textStyle: logInBtn,),
               ],
             ),
           ],
