@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-gradient(colors,Alignment start,Alignment end){
+BoxDecoration gradient(colors,Alignment start,Alignment end){
   return BoxDecoration(
     gradient: LinearGradient(
       begin: start,

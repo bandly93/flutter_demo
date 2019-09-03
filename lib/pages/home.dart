@@ -23,9 +23,9 @@ class HomePage extends StatelessWidget{
             TextContainer(text : 'Want to demo the app?', textStyle : descriptionStyle),
             Column(
               children: <Widget>[
-                ButtonContainer(text : "SIGN UP FREE",textStyle: signUpBtn, ),
+                ButtonContainer(text : "SIGN UP FREE", textStyle : signUpBtn, ),
                 ButtonContainer(text : "CONTINUE WITH FACEBOOK", textStyle : fbBtn),
-                ButtonContainer(text : "LOG IN", textStyle: logInBtn, route : LoginPage),
+                ButtonContainer(text : "LOG IN", textStyle : logInBtn, route : loginPage),
               ],
             ),
           ],

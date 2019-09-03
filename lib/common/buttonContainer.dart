@@ -15,7 +15,7 @@ class ButtonContainer extends StatelessWidget{
   final double width;
   const ButtonContainer({Key key, @required this.text , this.route, this.textStyle, this.width}) : super(key:key);
 
-  _navigate(context,page){
+  void _navigate(context,page){
     Navigator.push(context, MaterialPageRoute(builder : (context)=> page()));
   }
 
