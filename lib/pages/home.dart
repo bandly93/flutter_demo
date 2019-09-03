@@ -4,10 +4,11 @@ import '../styles/textStyles.dart';
 import 'package:flutter_app/common/gradientContainer.dart';
 import 'package:flutter_app/pages/login.dart';
 import 'package:flutter_app/common/textContainer.dart';
+import 'package:flutter_app/styles/colors.dart';
 
 class HomePage extends StatelessWidget{
 
-  final colors = [Color(0xFFFA4B81),Color(0xFFE74DF4),Color(0xFF5747D8)];
+  final colors = [color1,color2,color3];
 
   @override
   Widget build(BuildContext context){

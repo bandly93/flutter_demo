@@ -9,3 +9,6 @@ Color logoTintColor = Color(0XFFFCE3E0);
 Color opacityCOlor = Colors.white.withOpacity(0.9);
 
 LinearGradient appGradient = LinearGradient(colors: [firstColor, secondColor]);
+Color color1 = Color(0xFFFA4B81);
+Color color2 = Color(0xFFE74DF4);
+Color color3 = Color(0xFF5747D8);

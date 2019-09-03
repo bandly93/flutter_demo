@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/common/gradientContainer.dart';
 import 'package:flutter_app/common/navBar.dart';
 import 'package:flutter_app/common/buttonContainer.dart';
+import 'package:flutter_app/styles/colors.dart';
 
 LoginPage(){
   return Scaffold(
     body : Container(
-      decoration : gradient([Colors.pink[300],Colors.cyan[300],Colors.cyanAccent,],Alignment.bottomRight,Alignment.topLeft),
+      decoration : gradient([color1,color2,color3],Alignment.bottomRight,Alignment.topLeft),
       child : Column(
         children : <Widget>[
           NavBar(),
