@@ -8,12 +8,12 @@ import 'package:flutter/material.dart';
 
 */
 
-class Button extends StatelessWidget{
+class ButtonContainer extends StatelessWidget{
   final String text;
   final Function route;
   final TextStyle textStyle;
   final double width;
-  const Button({Key key, @required this.text , this.route, this.textStyle, this.width}) : super(key:key);
+  const ButtonContainer({Key key, @required this.text , this.route, this.textStyle, this.width}) : super(key:key);
 
   _navigate(context,page){
     Navigator.push(context, MaterialPageRoute(builder : (context)=> page()));

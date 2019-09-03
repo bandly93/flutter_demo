@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/common/gradientContainer.dart';
 import 'package:flutter_app/common/navBar.dart';
-import 'package:flutter_app/common/button.dart';
+import 'package:flutter_app/common/buttonContainer.dart';
 
 LoginPage(){
   return Scaffold(
@@ -16,7 +16,7 @@ LoginPage(){
                 Text("Login"),
                 TextField(decoration: InputDecoration(labelText: 'Email'),),
                 TextField(decoration: InputDecoration(labelText: 'Password'),),
-                Button(text : "Login"),
+                ButtonContainer(text : "Login"),
                 Text("Forget Password?")
               ],
             )

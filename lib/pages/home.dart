@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/common/button.dart';
-import '../styles/buttonStyles.dart';
+import 'package:flutter_app/common/buttonContainer.dart';
+import '../styles/textStyles.dart';
 import 'package:flutter_app/common/gradientContainer.dart';
 import 'package:flutter_app/pages/login.dart';
+import 'package:flutter_app/common/textContainer.dart';
 
 class HomePage extends StatelessWidget{
 
-  final colors = [Colors.pink[300],Colors.cyan[300],Colors.cyanAccent];
+  final colors = [Color(0xFFFA4B81),Color(0xFFE74DF4),Color(0xFF5747D8)];
 
   @override
   Widget build(BuildContext context){
@@ -17,28 +18,13 @@ class HomePage extends StatelessWidget{
         child : Column(
           mainAxisAlignment : MainAxisAlignment.spaceAround,
           children: <Widget>[
-            Text(
-              'Bubble',
-              style : TextStyle(
-                color : Colors.white,
-                fontSize : 60,
-                fontStyle: FontStyle.italic,
-              ),
-            ),
-            Text(
-              'Want to demo the app?',
-              textAlign: TextAlign.center,
-              style : TextStyle (
-                color : Colors.white,
-                fontSize : 25,
-                fontWeight: FontWeight.w600,
-                ),
-              ),
+            TextContainer(text : 'Bubble', textStyle :titleStyle),
+            TextContainer(text : 'Want to demo the app?', textStyle : descriptionStyle),
             Column(
               children: <Widget>[
-                Button(text : "SIGN UP FREE",textStyle: signUpBtn, ),
-                Button(text : "CONTINUE WITH FACEBOOK", textStyle : fbBtn),
-                Button(text : "LOG IN", textStyle: logInBtn, route : LoginPage),
+                ButtonContainer(text : "SIGN UP FREE",textStyle: signUpBtn, ),
+                ButtonContainer(text : "CONTINUE WITH FACEBOOK", textStyle : fbBtn),
+                ButtonContainer(text : "LOG IN", textStyle: logInBtn, route : LoginPage),
               ],
             ),
           ],

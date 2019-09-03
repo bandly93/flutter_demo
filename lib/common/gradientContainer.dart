@@ -5,7 +5,7 @@ gradient(colors,Alignment start,Alignment end){
     gradient: LinearGradient(
       begin: start,
       end: end,
-      stops: [0.1,0.7,1],
+      stops: [0.1,0.3,1],
       colors: colors,
     ),
   );
